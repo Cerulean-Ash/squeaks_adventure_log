@@ -25,19 +25,19 @@ const ENTRIES = [
     icon: '🖤',
     date: '1 May',
     title: "Camden Munch & World's End",
-    desc: "Julia looked incredible. Lots of talking, lots of laughing, then World's End bar for metal and chaos. Road the tube back together and Ashley almost missed the stop because he was too busy staring at Squeaks. Oops.",
+    desc: "Julia looked incredible. Lots of talking, lots of laughing, then World's End bar for metal and chaos. Rode the tube back together and Ashley almost missed the stop because he was too enamoured by Julia. Oops.",
   },
   {
     icon: '🌸',
     date: '9 May',
     title: 'First sleep over & Finneas',
-    desc: "Julia came over after a day of walking and being stuck on a train. They cooked, watched Hamnet, and ate ice cream. The next morning: Columbia Road Flower Market. Finneas the Ficus joined the family. Ashley walked Julia all the way to Waterloo. It was a long walk. Totally worth it.",
+    desc: "Julia stayed over at Ashley's after a day of walking and being stuck on a train. They cooked, watched Hamnet, and ate ice cream. The next morning: Columbia Road Flower Market. Finneas the Ficus joined the family. Ashley walked Julia all the way to Waterloo. It was a long walk. Totally worth it.",
   },
   {
     icon: '⛸️',
     date: '17 May',
     title: 'Ice Skating, Cheese & Boot Shopping',
-    desc: "Stayed at Squeaks's. Ice skating with friends. Cheese festival (obviously). Then a very serious hiking boot shopping expedition. Didn't buy boots, but had fun anyway.",
+    desc: "Ashley stayed over at Squeaks's. Ice skating with friends. Cheese festival (obviously). Then a very serious hiking boot shopping expedition. Didn't buy boots, but had fun anyway.",
   },
   {
     icon: '🏔️',
