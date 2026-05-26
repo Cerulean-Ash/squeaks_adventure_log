@@ -35,13 +35,13 @@ const ENTRIES = [
   },
   {
     icon: '⛸️',
-    date: '17 May',
+    date: '16 May',
     title: 'Ice Skating, Cheese & Boot Shopping',
     desc: "Ashley stayed over at Squeaks's. Ice skating with friends. Cheese festival (obviously). Then a very serious hiking boot shopping expedition. Didn't buy boots, but had fun anyway.",
   },
   {
     icon: '🏔️',
-    date: '24 May',
+    date: '23 May',
     title: 'Wales — Team Hobble Goes Big',
     desc: 'Long drive. Excellent snacks. Two epic hikes. Snowdon and Tryfan conquered. A cold lake swim that was somehow a great idea. Biltong consumed at altitude. Drove home sunburnt and very happy. Byebye 😘😘',
   },
