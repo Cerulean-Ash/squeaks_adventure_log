@@ -30,14 +30,14 @@ const ENTRIES = [
   {
     icon: '🌸',
     date: '9 May',
-    title: 'Birthday Weekend & Finneas',
-    desc: "Julia came over after a day of walking and being stiuck on a train. They cooked, watched Hamnet, and ate ice cream. The next morning: Columbia Road Flower Market. Finneas the Ficus joined the family. Ashley walked Julia all the way to Waterloo. It was a long walk. Totally worth it.",
+    title: 'First sleep over & Finneas',
+    desc: "Julia came over after a day of walking and being stuck on a train. They cooked, watched Hamnet, and ate ice cream. The next morning: Columbia Road Flower Market. Finneas the Ficus joined the family. Ashley walked Julia all the way to Waterloo. It was a long walk. Totally worth it.",
   },
   {
     icon: '⛸️',
     date: '17 May',
     title: 'Ice Skating, Cheese & Boot Shopping',
-    desc: "Stayed at Squeaks's. Ice skating with friends. Cheese festival (obviously). Then a very serious hiking boot shopping expedition. Didnt buy boots, but had fun anyway.",
+    desc: "Stayed at Squeaks's. Ice skating with friends. Cheese festival (obviously). Then a very serious hiking boot shopping expedition. Didn't buy boots, but had fun anyway.",
   },
   {
     icon: '🏔️',
