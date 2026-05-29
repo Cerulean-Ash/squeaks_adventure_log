@@ -1,16 +1,41 @@
-# React + Vite
+# Squeaks' Adventure Log
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Spotify Wrapped-style React app built for Squeaks. Full-screen story slides through every adventure, with a date picker and live push notifications.
 
-Currently, two official plugins are available:
+## What it does
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Swipeable story slides — one per adventure, each with its own colour theme
+- Tap right to advance, tap left to go back, or swipe
+- Final slide lets Julia pick the next adventure, choose a date, and send Ashley a push notification
 
-## React Compiler
+## Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React + Vite
+- canvas-confetti
+- ntfy.sh for push notifications (no backend needed)
+- Deployed to GitHub Pages
 
-## Expanding the ESLint configuration
+## Dev
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+cp .env.example .env.local   # then set your ntfy topic
+npm run dev
+```
+
+The ntfy topic is read from `VITE_NTFY_TOPIC` in `.env.local` (gitignored). Without it, notifications are simply skipped.
+
+## Deploy
+
+```bash
+npm run deploy
+```
+
+Builds and pushes to the `gh-pages` branch. Live at:
+**https://cerulean-ash.github.io/squeaks_adventure_log/**
+
+## Notifications
+
+Push notifications go to an [ntfy.sh](https://ntfy.sh) topic set via `VITE_NTFY_TOPIC` in `.env.local`. Install the ntfy app and subscribe to that topic to get alerts when Squeaks picks an adventure.
+
+The topic is kept out of the repo source, but Vite inlines it into the public build — so it's not a true secret (it's visible in the deployed bundle / network tab). To rotate: change the topic in `.env.local`, re-subscribe in the ntfy app, then `npm run deploy`.

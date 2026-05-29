@@ -207,6 +207,12 @@
   font-weight: bold;
   line-height: 1.3;
 }
+.adv-pill-hint {
+  font-size: .68rem;
+  color: var(--s);
+  font-style: italic;
+  line-height: 1.3;
+}
 
 /* ── Desktop nav arrows ── */
 .nav-arr {
@@ -293,6 +299,46 @@
   animation: fadeIn .4s ease;
   line-height: 1.5;
 }
+.date-wrapper {
+  position: relative;
+  width: 100%;
+  margin: .2rem 0 1.2rem;
+}
+.date-display {
+  padding: .8rem 1rem;
+  border: 1.5px solid #d4b896;
+  border-radius: 12px;
+  font-family: 'Georgia', serif;
+  font-size: .95rem;
+  color: #5c3d2e;
+  background: #fff9f2;
+  text-align: center;
+  pointer-events: none;
+}
+.date-input {
+  width: 100%;
+  padding: .75rem 1rem;
+  border: 1.5px solid #d4b896;
+  border-radius: 12px;
+  font-family: 'Georgia', serif;
+  font-size: 1rem;
+  color: #5c3d2e;
+  background: #fff9f2;
+  margin: .2rem 0 1.2rem;
+  text-align: center;
+}
+.date-input:focus { outline: none; border-color: #c07850; }
+.date-input::placeholder { color: #c0a080; }
+
+.date-input-hidden {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
 .ov-close {
   margin: 1.3rem auto 0;
   display: block;
