@@ -129,6 +129,26 @@
   50%      { opacity: 1; }
 }
 
+.s-skip {
+  position: absolute;
+  left: 50%;
+  bottom: max(22px, env(safe-area-inset-bottom));
+  transform: translateX(-50%);
+  background: none;
+  border: 1px solid var(--s);
+  border-radius: 30px;
+  padding: .55rem 1.3rem;
+  font-size: .82rem;
+  font-family: 'Georgia', serif;
+  color: var(--s);
+  white-space: nowrap;
+  cursor: pointer;
+  opacity: .7;
+  transition: transform .15s, opacity .2s;
+}
+.s-skip:hover  { opacity: 1; transform: translateX(-50%) scale(1.04); }
+.s-skip:active { transform: translateX(-50%) scale(.97); }
+
 .s-num {
   font-size: .7rem;
   letter-spacing: 2.5px;

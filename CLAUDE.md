@@ -10,7 +10,12 @@ npm run build     # production build → dist/
 npm run deploy    # build + push to gh-pages branch (deploys to GitHub Pages)
 ```
 
-No test suite. No linter beyond default Vite ESLint config.
+```bash
+npm test          # run the Vitest suite once
+npm run test:watch # watch mode
+```
+
+Tests use Vitest + Testing Library (jsdom). Specs live next to source as `*.test.js(x)`; shared setup is `src/test/setup.js`. Linter is the default Vite ESLint config (`npm run lint`).
 
 ## What this is
 

@@ -87,7 +87,7 @@ export default function App() {
         className={`slide slide--${dir}`}
         style={{ background: theme.bg, '--c': theme.color, '--s': theme.sub }}
       >
-        {slide.type === 'intro'      && <IntroSlide />}
+        {slide.type === 'intro'      && <IntroSlide onSkip={() => goTo(SLIDES.length - 2)} />}
         {slide.type === 'entry'      && <EntrySlide slide={slide} />}
         {slide.type === 'adventures' && <AdventuresSlide onSelect={setSelected} />}
       </div>

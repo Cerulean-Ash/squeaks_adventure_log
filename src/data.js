@@ -1,3 +1,13 @@
+// Where it all began. The intro's "weeks" counter is derived from this,
+// so it keeps climbing on its own.
+export const FIRST_DATE = '2026-03-29'
+
+export function weeksTogether(now = new Date()) {
+  const start = new Date(FIRST_DATE + 'T00:00:00')
+  const weeks = Math.floor((now - start) / 604_800_000) // ms in a week
+  return Math.max(1, weeks)
+}
+
 export const ENTRIES = [
   {
     icon: '🍣',
@@ -41,6 +51,12 @@ export const ENTRIES = [
     title: 'Wales — Team Hobble Goes Big',
     desc: 'Long drive. Excellent snacks. Two epic hikes. Snowdon and Tryfan conquered. A cold lake swim that was somehow a great idea. Biltong consumed at altitude. Drove home sunburnt and very happy. Byebye 😘😘',
   },
+  {
+    icon: '👑',
+    date: '29-30 May',
+    title: 'The Official Upgrade & Awesome Bike HIIT',
+    desc: `Friday roast chicken and "questionable" lemon bars. Saturday saw a massive cycle through Richmond Park to Kingston. Conquered brutal hills on "Awesome Bike" (bent chain = involuntary HIIT workout). Most importantly: We're officially a couple. Upgraded to v1.0 ❤️`,
+  },
 ]
 
 export const ADVENTURES = [
@@ -50,13 +66,11 @@ export const ADVENTURES = [
   { icon: '🐶', name: 'Puppy Yoga / Therapy',        hint: 'Downward dog. Actual dogs. Obviously.' },
   { icon: '🌙', name: 'Cuddle Night & Market Day', hint: 'Maximum chill. Minimum plans.' },
   { icon: '🍹', name: 'Alchemist Cocktail Night',  hint: 'Fancy drinks. Fancy outfits. Obviously.' },
-  { icon: '🍿', name: 'Movie & Bake Night',         hint: 'Popcorn. Blankets. Something in the oven.' },
-  { icon: '🦌', name: 'Richmond Park',              hint: 'Flowers, deer, and a very long walk. Ideal.' },
   { icon: '😂', name: 'Comedy Night',               hint: 'Laughing until it hurts. Guaranteed.' },
   { icon: '✨', name: 'Surprise me...',             hint: "Your idea. Ashley's in.", custom: true },
 ]
 
-// One theme per slide: [intro, ...7 entries, adventures]
+// One theme per slide: [intro, ...8 entries, adventures]
 export const THEMES = [
   { bg: 'linear-gradient(160deg,#fdf0e0,#e8c47a)', color: '#5c3d2e', sub: '#9a7050', bar: 'rgba(92,61,46,.3)',    barFill: '#c07850' },
   { bg: 'linear-gradient(160deg,#f5a070,#c04820)', color: '#fff',    sub: 'rgba(255,255,255,.72)', bar: 'rgba(255,255,255,.28)', barFill: '#fff' },
@@ -66,6 +80,7 @@ export const THEMES = [
   { bg: 'linear-gradient(160deg,#f09abe,#ae386a)', color: '#fff',    sub: 'rgba(255,255,255,.8)',  bar: 'rgba(255,255,255,.28)', barFill: '#fff' },
   { bg: 'linear-gradient(160deg,#84c8f0,#1658b0)', color: '#fff',    sub: 'rgba(255,255,255,.75)', bar: 'rgba(255,255,255,.28)', barFill: '#fff' },
   { bg: 'linear-gradient(160deg,#345630,#080e08)', color: '#fff',    sub: '#80d870',               bar: 'rgba(255,255,255,.18)', barFill: '#80d870' },
+  { bg: 'linear-gradient(160deg,#f0c060,#8e2d5a)', color: '#fff',    sub: '#f5dca0',               bar: 'rgba(255,255,255,.22)', barFill: '#f5dca0' },
   { bg: 'linear-gradient(160deg,#fdf0e0,#e8c47a)', color: '#5c3d2e', sub: '#9a7050', bar: 'rgba(92,61,46,.3)',    barFill: '#c07850' },
 ]
 

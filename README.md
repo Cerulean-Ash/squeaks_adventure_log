@@ -37,5 +37,3 @@ Builds and pushes to the `gh-pages` branch. Live at:
 ## Notifications
 
 Push notifications go to an [ntfy.sh](https://ntfy.sh) topic set via `VITE_NTFY_TOPIC` in `.env.local`. Install the ntfy app and subscribe to that topic to get alerts when Squeaks picks an adventure.
-
-The topic is kept out of the repo source, but Vite inlines it into the public build — so it's not a true secret (it's visible in the deployed bundle / network tab). To rotate: change the topic in `.env.local`, re-subscribe in the ntfy app, then `npm run deploy`.
